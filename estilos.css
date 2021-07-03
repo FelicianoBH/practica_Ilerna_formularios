@@ -1,0 +1,100 @@
+*{box-sizing:border-box;}
+
+#bloque_pral {
+
+	margin-top:20px;
+
+}
+#bloque {
+	border-radius:30px;
+	border-color: #2A2AFF;
+	border-style: solid;
+	border-width: thick;
+	color: #FFFFFF;
+	background-color: #00AAFF;
+	text-align:center;
+}
+#lista {
+
+	color: #FFFFFF;
+	background-color: #00AAFF;
+	display:block;
+
+}
+form {
+	width:500px;
+	padding:16px;
+	border-radius:30px;
+	margin:auto;
+	background-color:#00D4FF;
+}
+
+label {
+	width:130px;
+	font-size:24px;
+	border-radius: 15px;
+	color: #FFFFFF;
+	border-color: #2A2AFF;
+	border-style: solid;
+	border-width: medium;
+	background-color: #00AAFF;
+	text-align:center;
+	display:inline-block;
+}
+
+.sublinea  {
+
+	display:none;
+	color: #CC0000;
+	text-align: center;
+	font-size: 20px;
+	text-align: center;
+}
+#resetear {
+	display:inline-block;
+	margin-left:10px;
+}
+#iniciar {
+	display:inline-block;
+	margin-left:10px;
+}
+form input {
+	width:330px;
+	padding:5px 5px;
+	border-radius:15px;
+	border-color: #2A2AFF;
+	border-style: solid;
+	border-width: thick;
+	margin:8px 0;
+	font-size:20px;
+	display:inline-block;
+	
+}
+form input[type="button"] {
+
+	width:100px;
+	padding:5px 5px;
+	border-radius: 15px;
+	background-color: #00AAFF;
+	color: #FFFFFF;
+	margin:0 auto;
+
+}
+select {
+	font-size:20px;
+	width:150px;
+	padding:5px 5px;
+	border-radius: 15px;
+	border-color: #00AAFF;
+	border-style: solid;
+	border-width: thick;
+	margin:8px 0;
+
+}
+
+option li:hover {
+    
+    color: blue;
+    background-color: yellow;
+    
+}

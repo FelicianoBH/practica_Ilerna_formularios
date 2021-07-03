@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formulario</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+	<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body>
+	<div id="bloque_pral"> 
+		<form action="#" target="" method="get" id="formulario" name="formulario">
+			<div id="bloque">
+			<h2> DATOS PERSONALES </h2>
+			</div>
+			<p>
+			<label for="nombre">Nombre:</label>
+		 	 <input class="campo_in" type="text" name="nombre" id="nombre" onblur="pasaMayuscula(this.id);" onfocus="inicializoCampo(this.id)"/> 
+		 	 <div  id="l_nombre" class="sublinea">* Contiener valores numéricos</div> 
+			</p>
+			<p>
+			<label for="apellido">Apellidos:</label>
+			<input class="campo_in" type="text" name="apellido" id="apellido"  onblur="pasaMayuscula(this.id);" onfocus="inicializoCampo(this.id)">
+			<div  id="l_apellido" class="sublinea">* Contiene valores numéricos</div>
+			</p>
+			<p>
+			<label for="edad">Edad:</label>
+			<input class="campo_in" type="text" name="edad" id="edad" onblur="validaNumerico(this.id);" onfocus="inicializoCampo(this.id)">
+			 <div  id="l_edad" class="sublinea">* Introduzca Edad entre 0 y 105 años</div> 
+			</p>
+			<label for="nif">NIF:</label>
+			<input class="campo_in" type="text" name="nif" id="nif" placeholder="12345678-L (Mayúscula)" maxlength="10" minlength="10" onfocus="inicializoCampo(this.id)">
+			<div  id="l_nif" class="sublinea" >* Nif incorrecto </div> 
+			<p>
+			<label for="email">Email:</label>
+			<input class="campo_in" type="email" name="email" id="email" onkeypress="inicializoCampo(this.id)" onfocus="inicializoCampo(this.id)">
+			<div  id="l_email" class="sublinea">* Email con formatao erroneo </div> 
+			</p>
+			<p>
+			<label>Provincia:</label>
+			<select name="seleccion" id="seleccion">
+				<option value="">Provincia</option>
+				<option>Madrid</option>
+				<option>Barcelona</option>
+				<option>Sevilla</option>
+				<option>Zaragoza</option>
+				<option>Bilbao</option>
+				<option>Valencia</option>
+				<option>Granada</option>
+				<option>Lleida</option>
+			</select>
+			<div  id="l_provincia" class="sublinea">* Contiener valores numéricos</div> 
+			</p>
+			<p>
+		 	 <input class="campo_in" type="button" name="envio" id="envio" value="Enviar" onclick = "enviarDatos()"/>
+		 	  <input class="campo_in" type="button" name="resetear" id="resetear" value="Limpiar" onclick = "resetFormulario()">
+		 	 <input class="campo_in" type="button" name="iniciar" id="iniciar" value="Restart" onclick = "mostrarLista()"/>
+			</p>
+		</form>
+	</div>
+	<div id="bloque_lista">
+		<h2>Datos Almacenados</h2>
+		<u class="lista" id="lista">
+			<li id="aqui"></li>
+		</u>
+	</div>
+</body>
+</html>
